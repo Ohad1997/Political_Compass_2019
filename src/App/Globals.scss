@@ -1,0 +1,26 @@
+$mobile:440px;
+$tablet:1040px;//same size but help readability
+$desktop:1040px;
+$maxSupportWidth:1600px;
+$maxSupportHeight:900px;
+$gold:rgb(240, 184, 0);
+:export {
+    mobile: $mobile;
+    tablet:$tablet;
+    desktop:$desktop;
+    maxSupportWidth:$maxSupportWidth;
+    maxSupportHeight:$maxSupportHeight
+}
+.hide{
+  opacity:0;
+}
+.not-shown{
+  display: none;
+}
+.click{
+    cursor:pointer;
+}
+.nav-link{
+  text-decoration: none;
+  color:inherit;
+}

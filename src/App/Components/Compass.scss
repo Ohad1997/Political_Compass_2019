@@ -1,0 +1,52 @@
+.inner-circle-text{
+    font-weight: 500;
+    fill:white;
+    font-size:22px;
+}
+
+.party-icon{
+    pointer-events: none;
+    transition:0.1s;
+}
+.party-tooltip-rect-front{
+    fill: rgb(24, 24, 24);
+    stroke-width:3px;
+    stroke:#E7D7D7;
+}
+.party-tooltip-rect-back{
+    stroke-width:4px;
+    stroke:black;
+}
+
+.party-tooltip{
+    position: absolute;
+    fill:white;
+    pointer-events: none;
+}
+.result-compass{
+    width:80vw;
+    height:80vw;
+    min-width: calc(320px + 4vw);
+    min-height: calc(320px + 4vw);
+    max-width: calc(55vh + 3vw);
+    max-height: calc(55vh + 3vw);
+    @media (max-width:$tablet),(max-aspect-ratio: 8/5){
+        position: relative;
+        left:0;
+        top:0;
+        transform:none;
+        margin:2% auto;
+    }
+    @media (max-width:$mobile){
+        min-width: 280px;
+        min-height: 280px;
+        width:60vh;
+        height:60vh;
+        max-width: 94vw;
+        max-height: 94vw;
+    }
+    @media (min-width:$maxSupportWidth){
+        width:700px;
+        height:700px;
+    }
+}

@@ -1,0 +1,70 @@
+.App-header {
+    background:black;
+    height:calc(1.1rem + 0.3vw + 1vh);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(0.7rem + 0.2vw  + 0.8vh);
+    color: white;
+    padding-bottom:0.5em;
+    @media (min-width:$maxSupportWidth){
+        height:28px;
+        font-size:21px;
+    }
+    .wrapper{
+      display:flex;
+      flex-direction: row;
+      margin-top:0.6em;
+      .header-bird-fly{
+        animation-duration: 1s;
+        transform-origin: center;
+        animation-name: flybirdyfly;
+      }
+      &:hover{
+        filter:brightness(89%);
+      }
+      .text-container{
+        font-weight: 500;
+        display:flex;
+        flex-direction: row;
+        letter-spacing: -0.05em;
+        margin-top:0.11em;
+        .freedom-text{
+          margin-left:0.22em;
+        }
+      }
+    }
+    
+  }
+  
+  .bird-white-small{
+    filter: invert(100%);
+    width:1.3em;
+    height:1.35em;
+    margin-left:0.15em;
+    margin-right:0.5em;
+    transform:rotate(5deg)
+  }
+
+  @keyframes flybirdyfly {
+    20% {
+        transform: rotate3d(0, 0, 1, 8deg);
+    }
+    
+    40% {
+        transform: rotate3d(0, 0, 1, -6deg);
+    }
+    
+    60% {
+        transform: rotate3d(0, 0, 1, 2deg);
+    }
+    
+    80% {
+        transform: rotate3d(0, 0, 1, -2deg);
+    }
+    
+    to {
+        transform: rotate3d(0, 0, 4, 5deg);
+    }
+}
